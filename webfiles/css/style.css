@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+/*--------------------------*/
+/*-----TABLE DES STYLES-----*/
+/*--------------------------*/
+/*----------HEADER----------*/
+/*---------SECTION 1--------*/
+/*---------SECTION 2--------*/
+/*---------SECTION 3--------*/
+/*---------SECTION 4--------*/
+/*----------FOOTER----------*/
+/*-------MEDIA QUERIES------*/
+/*--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+/*----------HEADER----------*/
+header {
+    height: 100vh;
+    background-color: #151B2B;
+    color: #fff;
+}
+
+header nav > img {
+    width: auto;
+    margin: 30px 0;
+    height: 50px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    height: 800px;
+}
+
+header section, nav, body > div:first-of-type {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header section article div:first-of-type {
+    align-items: baseline;
+    display: flex;
+}
+
+h1 {
+    margin: 0 2rem 4rem 0;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #F9F9FD;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.product {
+    margin-bottom: 4rem;
+}
+
+header section > img {
+    max-width: 40%;
+}
+
+.media {
+    font-size: 1rem;
+    max-width: 475px;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#github {background-color: #454658;}
+
+#discord {background-color: #6578C0;}
+
+#github, #discord {
+    border-radius: 0.25rem;
+    color: #FFF;
+    align-items: center;
+    padding: 0 1rem;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#github img, #discord img {padding-right: 0.5rem;}
+
+#github p, #discord p {padding: 0 0.25rem;}
+
+body > div:first-of-type {color: #454658;}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+h3, .product2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*---------SECTION 1----------*/
+body div section:first-of-type {
+    height: 825px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body div section:first-of-type > .product2 {width: 75%;}
+
+body div section:nth-of-type(2) {margin-top: 6rem;}
+
+.secondBackground {
+    height: 200px;
+    background: url("../../src/img/background2.png");
+}
+/*---------SECTION 2----------*/
+.firstButton {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.firstButton a {
+    text-decoration: none;
+}
+
+.firstButton span {
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: #5D64D2;
+}
+
+.blue {color: blue;}
+
+.grey {color: grey;}
+
+.green {color: green;}
+
+.red {color: red;}
+
+.purple {color: purple;}
+
+body div section:nth-of-type(3) {margin: 6rem 0;}
+
+body div section:nth-of-type(3) > .media {margin: 0 auto;}
+
+body div section:nth-of-type(4) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*---------SECTION 3----------*/
+body div section:nth-of-type(4) div {
+    width: 35%;
+    margin-bottom: 3rem;
+}
+
+h4 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+body div section:nth-of-type(4) div p {
+    margin-bottom: 0.50rem;
+    text-align: justify;
+}
+
+body div section:nth-of-type(4) div a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+/*---------SECTION 4----------*/
+h5 {
+    text-align: center;
+    margin: 4rem 0 4rem;
+    font-size: 2rem;
+}
+
+.bandeau {
+    margin-bottom: 5rem;
+    background-color: #151B2B;
+    height: 150px;
+}
+/*----------FOOTER----------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+footer div:first-of-type {
+    margin-bottom: 2.5rem;
+    height: 50px;
+}
+
+footer div:nth-of-type(2), .footerRight {display: flex;}
+
+footer div:nth-of-type(2) {column-gap: 4rem;}
+
+.footerLeft {flex: 0.5;}
+
+footer i {
+    color: grey;
+    padding: 1.5rem;
+}
+
+i:first-of-type {padding-left: 0;}
+
+.footerRight {
+    justify-content: space-between;
+    flex: 2;
+}
+
+footer p, ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul li:first-of-type {
+    font-weight: bold;
+    color: black;
+    margin-top: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+footer section p, footer section a {font-size: 0.90rem;}
+
+footer section p {color: grey;}
+
+footer section a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*-------MEDIA QUERIES----------*/
+@media screen and (max-width: 1200px) {
+    header, body div:first-of-type, footer section {
+       padding: 0 20px;
+    }
+
+    header {
+       position: relative;
+    }
+
+    header section article, header section img {
+       position: absolute;
+       transform: translate(-50%, -50%);
+       top: 50%;
+       left: 50%;
+    }
+
+    header section article{
+       z-index: 20;
+    }
+
+    header section img {
+       opacity: 0.40;
+       max-width: 100%;
+    }
+
+    body div section:nth-of-type(4) div {
+       width: 80%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    body div section:first-of-type img, body div section:nth-of-type(4) div img {
+       max-width: 100%;
+    }
+
+    body div section:nth-of-type(4), footer div:nth-of-type(2), .footerLeft, footer div:first-of-type {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .footerLeft {
+       margin-bottom: 1.5rem;
+       padding: 0 30px;
+    }
+
+    .footerLeft p:first-of-type {
+        text-align: center;
+    }
+
+    .footerLeft div:first-of-type {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerRight {
+       width: 100%;
+       padding: 0 30px;
+    }
+
+    .footerRight ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 14px;
+    }
+    body div section:nth-of-type(2), header section article div:first-of-type{
+       font-size: 0.50rem;
+    }
+
+
+    body div section:first-of-type {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    * {
+        font-size: 12px;
+    }
+
+    body div section:nth-of-type(2) {
+        font-size: 0.25rem;
+    }
+
+    body div section:first-of-type {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    * {
+        font-size: 10px;
+    }
+
+    .media {
+        justify-content: space-around;
+    }
+
+}
